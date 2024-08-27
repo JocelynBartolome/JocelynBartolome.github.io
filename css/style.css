@@ -1224,5 +1224,31 @@
 					max-height: 100%;
 					border-radius: 8px;
 				}
+
+				.gallery {
+					display: grid;
+					grid-template-columns: repeat(3, 1fr);
+					gap: 10px;
+					padding: 10px;
+					margin-top: -60px;
+				}
+				
+				.gallery-item {
+					overflow: hidden;
+					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+				}
+				
+				.gallery-item img {
+					width: 100%;
+					height: auto;
+					display: block;
+				}
+				
+				/* Responsive Design for Mobile Devices */
+				@media (max-width: 768px) {
+					.gallery {
+						grid-template-columns: 1fr;
+					}
+				}
 				
 	
