@@ -1230,21 +1230,26 @@
 					grid-template-columns: repeat(3, 1fr);
 					gap: 10px;
 					padding: 10px;
-					margin-top: -60px;
+					margin-top: -80px;
 				}
 				
 				.gallery-item {
 					overflow: hidden;
-					box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+					height: 300px;
+					display: flex;
+    				justify-content: center;
+    				align-items: center;
 				}
 				
 				.gallery-item img {
 					width: 100%;
 					height: auto;
+					object-fit: cover;
 					display: block;
+					
 				}
 				
-				/* Responsive Design for Mobile Devices */
+				/* Responsive for mobile devices*/
 				@media (max-width: 768px) {
 					.gallery {
 						grid-template-columns: 1fr;
